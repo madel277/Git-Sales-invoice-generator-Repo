@@ -36,10 +36,10 @@ public class Controller implements ActionListener, ListSelectionListener {
         String actionCommand = e.getActionCommand();
         System.out.println("USER Interaction: " + actionCommand);
         switch (actionCommand) {
-            case "Clicked Load File":
+            case "Load File":
                 loadFile();
                 break;
-            case "Clicked Save File":
+            case "Save File":
                 saveFile();
                 break;
             case "Create New Invoice":
@@ -48,22 +48,22 @@ public class Controller implements ActionListener, ListSelectionListener {
             case "Delete Invoice":
                 deleteInvoice();
                 break;
-            case "Clicked SAVE":
+            case "Save":
                 createNewItem();
                 break;
-            case "Clicked Cancel":
+            case "Cancel":
                 deleteItem();
                 break;
-            case "InvoiceCancel":
+            case "createInvoiceCancel":
                 createInvoiceCancel();
                 break;
-            case "createInvoice":
+            case "createInvoiceOK":
                 createInvoiceOK();
                 break;
-            case "createLine":
+            case "createLineOK":
                 createLineOK();
                 break;
-            case "LineCancel":
+            case "createLineCancel":
                 createLineCancel();
                 break;
         }

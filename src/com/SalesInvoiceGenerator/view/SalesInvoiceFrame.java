@@ -111,6 +111,11 @@ public class SalesInvoiceFrame extends javax.swing.JFrame {
         });
 
         deleteLineButton.setText("Cancel");
+        deleteLineButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteLineButtonActionPerformed(evt);
+            }
+        });
 
         jLabel5.setText("Invoice Items");
 
@@ -219,6 +224,10 @@ public class SalesInvoiceFrame extends javax.swing.JFrame {
     private void createLineButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createLineButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_createLineButtonActionPerformed
+
+    private void deleteLineButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteLineButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_deleteLineButtonActionPerformed
 
     /**
      * @param args the command line arguments
